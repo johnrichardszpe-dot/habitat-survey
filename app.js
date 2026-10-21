@@ -427,7 +427,7 @@
     main.innerHTML = top(t('about'), '') + '<div class="card">' + t('aboutText') + '</div><div class="card"><h3>How to use</h3>' + t('howToText') + '</div>' +
       '<div class="card warn">' + t('sensitiveNote') + '</div><div class="card"><h3>' + t('limitsTitle') + '</h3>' + t('limitsText') + '</div>' +
       '<div class="card"><h3>' + t('sourcesTitle') + '</h3>' + t('sourcesText') + '</div>' +
-      '<p class="small center">' + t('version', { v: VERSION }) + ' · <a href="https://github.com/johnrichardszpe-dot/habitat-survey">GitHub</a></p>';
+      (window.MoreTools ? MoreTools.html('habitat-survey') : '') + '<p class="small center">' + t('version', { v: VERSION }) + ' · <a href="https://github.com/johnrichardszpe-dot/habitat-survey">GitHub</a></p>';
   }
 
   // ---------- start ----------
